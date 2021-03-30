@@ -27,18 +27,18 @@ const translate = (userInput) => {
     const inputArray = userInput.split(" ");
 
     const englishArray = inputArray.map(input=>{
-      let index = morseCode.indexOf(input);
+      const index = morseCode.indexOf(input);
       
       if (alphabet[index-10]) {
         return alphabet[index-10];
       } else if (input === "/") {
-        return "/";
+        return " ";
       } else {
         return index;
       }
-    }); 
+    });
 
-    translation.innerHTML = `"${userInput}" in English: <span>${englishArray.join(" ")}</span>`;
+    translation.innerHTML = `"${userInput}" in English: <span>${englishArray.join("")}</span>`;
   }
 }
 
