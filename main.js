@@ -11,7 +11,7 @@ const morseNumbers = ["-----", ".----", "..---", "...--", "....-", ".....", "-..
 const translate = (input) => {
   const inputArray = input.split("");
 
-  let morseArray = inputArray.map(input=>{
+  const morseArray = inputArray.map(input=>{
     if ((/[0-9]/).test(input)) {
       return morseNumbers[+input]
     } else if ((/[a-zA-Z]/).test(input)) {
