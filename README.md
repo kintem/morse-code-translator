@@ -7,4 +7,4 @@ A simple Morse code translator which was built in 2.5 hours for one of the Tech 
 - Must translate English into Morse code
 
 ### Extension
-- Translate from Morse code into English as well
+- Should translate Morse code into English as well
